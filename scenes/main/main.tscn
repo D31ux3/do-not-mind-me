@@ -18,3 +18,11 @@ offset_top = 28.0
 offset_right = 598.0
 offset_bottom = 51.0
 text = "Do Not Mind Me"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 111.0
+offset_right = 603.0
+offset_bottom = 134.0
+text = "Press ESC to play"

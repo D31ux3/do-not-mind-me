@@ -17,6 +17,21 @@ stream_0/stream = ExtResource("3_woxlu")
 stream_1/stream = ExtResource("4_ay68w")
 stream_2/stream = ExtResource("5_evswx")
 
+[sub_resource type="Animation" id="Animation_evswx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_ay68w"]
 resource_name = "alert"
 loop_mode = 1
@@ -32,21 +47,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Color(1, 1, 1, 1), Color(0.873323, 0.0590578, 0.229225, 1), Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_evswx"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p70cs"]
@@ -81,7 +81,6 @@ shape = SubResource("CapsuleShape2D_pcwmf")
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
 radius = 30.0
 max_speed = 150.0
-debug_enabled = true
 
 [node name="PlayerDetect" type="RayCast2D" parent="."]
 target_position = Vector2(400, 0)

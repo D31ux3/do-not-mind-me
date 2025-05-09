@@ -49,6 +49,7 @@ color = Color(1, 1, 1, 0)
 polygon = PackedVector2Array(447, 320, 448, 385, 639, 385, 640, 318)
 
 [node name="Path" type="Node2D" parent="."]
+visible = false
 
 [node name="Waypoint" parent="Path" instance=ExtResource("4_qkmgm")]
 position = Vector2(715, 227)
